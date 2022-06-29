@@ -1,10 +1,20 @@
 <template>
-  <h1 class="font-bold text-red-400">Hello</h1>
+  <LandingPage />
 </template>
 
 <script>
-</script>
 
+  import LandingPage from './components/LandingPage.vue'
+
+  export default {
+    name: 'App',
+    components: {
+      LandingPage,
+    }
+  }
+
+
+</script>
 
 <style>
 
