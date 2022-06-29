@@ -21,7 +21,9 @@
 @import '@/assets/base.css';
 
 #app {
-  max-width: 1280px;
+  /*max-width: 1280px;*/
+  background-color: #FAFCFC;
+  padding: 0 4rem;
 
   font-weight: normal;
 }
