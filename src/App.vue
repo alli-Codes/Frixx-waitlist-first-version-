@@ -1,18 +1,21 @@
 <template>
-<Header />
+  <Header />
   <LandingPage />
+  <ConnectPage />
 </template>
 
 <script>
 
   import Header from './components/Header/Header.vue'
   import LandingPage from './components/landing-page/LandingPage.vue'
+  import ConnectPage from './components/Connect.vue'
 
   export default {
     name: 'App',
     components: {
       Header,
       LandingPage,
+      ConnectPage
     }
   }
 
