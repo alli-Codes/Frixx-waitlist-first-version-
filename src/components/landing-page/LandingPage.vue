@@ -23,7 +23,7 @@
             </div>
         </div>
 
-        <div id="strap" class="w-full h-24 bg-primary font-semibold flex items-center justify-center">Join the waitlist to get early access</div>
+        <div id="strap" class="w-full h-20 bg-primary font-semibold flex items-center justify-center">Join the waitlist to get early access</div>
     </div>
 </template>
 
