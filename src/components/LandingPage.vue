@@ -3,8 +3,8 @@
         <div id="landing__text-section" class=" h-full w-1/2 flex flex-col pl-16 items-start justify-center">
             <!-- <img src="../assets/images/headline.png" class="h-80"> -->
 
-            <div id="headline" class="text-5xl font-bold flex w-80 relative bg-red-400">
-                <h1 style="line-height: 64px">A community for Tech Enthusiasts fueled by knowledge</h1>
+            <div id="headline" class="text-5xl font-bold flex w-80 relative">
+                <h1 style="line-height: 64px">A community for <h1 style="color: #ACCCC9; display: inline">Tech Enthusiasts</h1> fueled by knowledge</h1>
                 <Circle />
                 <!-- <img src="../assets/images/circle.svg" class="absolute inset-y-40"> -->
             </div>
