@@ -4,16 +4,16 @@
             <!-- <img src="../assets/images/headline.png" class="h-80"> -->
 
             <div id="headline" class="text-5xl font-bold flex w-80 relative">
-                <h1 style="line-height: 64px">A community for <h1 style="color: #ACCCC9; display: inline">Tech Enthusiasts</h1> fueled by knowledge</h1>
+                <h1 style="line-height: 64px">A community for <h1 style="display: inline" class="text-primary">Tech Enthusiasts</h1> fueled by knowledge</h1>
                 <Circle />
                 <!-- <img src="../assets/images/circle.svg" class="absolute inset-y-40"> -->
             </div>
 
             <p class="w-96 mt-4 font-semibold leading-6 text-lg">Adipiscing commodo, eget morbi sagittis. Quis dignissim viverra ultrices enim, massa dolor dolor eget. Ultrices ornare quam tristique pharetra. Vel, sit scelerisque commodo libero,</p>
 
-            <div id="input__field" class="w-full bg-green-400 flex m-4">
-                <input id="input" type="text" class=" flex shrink w-3/4 p-4">
-                <button class="flex shrink w-1/5 flex items-center justify-center bg-green-600">Join the waitlist</button>
+            <div id="input__field" class="w-full flex mt-8 shadow-3xl rounded">
+                <input id="input" type="text" class=" flex shrink w-4/5 p-4" placeholder="Enter your email address">
+                <button class="flex shrink w-1/5 flex items-center justify-center font-semibold bg-green shadow-3xl rounded-r">Join the waitlist</button>
             </div>
         </div>
 
@@ -38,4 +38,12 @@
 </script>
 
 <style scoped>
+    #input{
+        outline: none;
+    }
+
+    #input::placeholder{
+        font-weight: 600;
+    }
+    
 </style>
