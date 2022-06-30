@@ -3,9 +3,10 @@
         <div id="landing__text-section" class=" h-full w-1/2 flex flex-col pl-16 items-start justify-center">
             <!-- <img src="../assets/images/headline.png" class="h-80"> -->
 
-            <div id="headline" class="text-5xl font-bold w-80 ">
+            <div id="headline" class="text-5xl font-bold flex w-80 relative bg-red-400">
                 <h1 style="line-height: 64px">A community for Tech Enthusiasts fueled by knowledge</h1>
-                <img src="../assets/images/circle.svg" class="absolute inset-y-40">
+                <Circle />
+                <!-- <img src="../assets/images/circle.svg" class="absolute inset-y-40"> -->
             </div>
 
             <p class="w-96 m-4">Adipiscing commodo, eget morbi sagittis. Quis dignissim viverra ultrices enim, massa dolor dolor eget. Ultrices ornare quam tristique pharetra. Vel, sit scelerisque commodo libero,</p>
@@ -24,8 +25,13 @@
 
 <script>
 
+    import Circle from './Circle.vue'
+
     export default {
         name: 'LandingPage',
+        components: {
+            Circle
+        }
 
     }
 
