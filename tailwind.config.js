@@ -13,6 +13,10 @@ module.exports = {
         'green': '#4BB064'
       },
 
+      backgroundImage: {
+        'connect-pattern': "url('./src/assets/images/connect.png')"
+      },
+
       boxShadow: {
         '3xl': '0px 4px 8px rgba(0, 0, 0, 0.05)'
       }
