@@ -1,5 +1,5 @@
 <template>
-    <svg width="80%" height="80%" viewBox="0 0 640 700" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="70%" height="70%" viewBox="0 0 640 700" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <circle opacity="0.5" cx="320" cy="350" r="320" fill="url(#paint0_linear_165_242)"/>
 <circle opacity="0.5" cx="320" cy="350" r="258" fill="url(#paint1_linear_165_242)"/>
 <rect opacity="0.7" y="74.8691" width="302.872" height="612" transform="rotate(-10 0 74.8691)" fill="url(#pattern0)"/>
