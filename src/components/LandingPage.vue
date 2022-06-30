@@ -9,7 +9,7 @@
                 <!-- <img src="../assets/images/circle.svg" class="absolute inset-y-40"> -->
             </div>
 
-            <p class="w-96 m-4">Adipiscing commodo, eget morbi sagittis. Quis dignissim viverra ultrices enim, massa dolor dolor eget. Ultrices ornare quam tristique pharetra. Vel, sit scelerisque commodo libero,</p>
+            <p class="w-96 mt-4 font-semibold leading-6 text-lg">Adipiscing commodo, eget morbi sagittis. Quis dignissim viverra ultrices enim, massa dolor dolor eget. Ultrices ornare quam tristique pharetra. Vel, sit scelerisque commodo libero,</p>
 
             <div id="input__field" class="w-full bg-green-400 flex m-4">
                 <input id="input" type="text" class=" flex shrink w-3/4 p-4">
