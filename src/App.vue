@@ -1,14 +1,17 @@
 <template>
+<Header />
   <LandingPage />
 </template>
 
 <script>
 
-  import LandingPage from './components/LandingPage.vue'
+  import Header from './components/Header.vue'
+  import LandingPage from './components/landing-page/LandingPage.vue'
 
   export default {
     name: 'App',
     components: {
+      Header,
       LandingPage,
     }
   }
