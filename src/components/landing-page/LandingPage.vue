@@ -25,7 +25,7 @@
 
 <script>
 
-    import Circle from './landing-page/Circle.vue'
+    import Circle from './Circle.vue'
     import Mockup from './Mockup.vue'
 
     export default {
