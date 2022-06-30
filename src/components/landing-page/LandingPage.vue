@@ -40,6 +40,10 @@
 </script>
 
 <style scoped>
+
+    #landing__page{
+        padding: 0 4rem;
+    }
     #input{
         outline: none;
     }
