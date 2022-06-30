@@ -17,8 +17,8 @@
             </div>
         </div>
 
-        <div id="landing__image-section" class="bg-green-400 h-full w-1/2">
-        
+        <div id="landing__image-section" class="bg-green-400 h-full w-1/2 flex justify-center items-center">
+            <Mockup />
         </div>
     </div>
 </template>
@@ -26,11 +26,13 @@
 <script>
 
     import Circle from './Circle.vue'
+    import Mockup from './Mockup.vue'
 
     export default {
         name: 'LandingPage',
         components: {
-            Circle
+            Circle,
+            Mockup
         }
 
     }
