@@ -1,8 +1,7 @@
 <template>
 
-    <div style="height: 728px" class="flex flex-col items-center py-8 px-32 relative">
-        <h1 class="font-bold text-4xl p-16 z-10">Some of Our Features</h1>
-        <Circle :style="styles" />
+    <div style="height: 600px" class="flex flex-col items-center py-8 px-32 relative">
+        
 
         <div class=" flex justify-around items-center ">
             <div class="flex-1">
@@ -21,20 +20,11 @@
 
 <script>
 
-    import Circle from '../../landing-page/Circle.vue'
+    
 
     export default {
         name: 'Section1',
-        components: {Circle},
-        data(){
-            return{
-                styles: {
-                    strokeColor: '#8E25B6',
-                    top: '0',
-                    left: '37rem',
-                }
-            }
-         }
+        
     }
 
 </script>

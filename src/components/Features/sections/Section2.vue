@@ -1,9 +1,9 @@
 <template>
 
-    <div style="height: 728px" class="flex flex-col items-center py-8 px-32 relative">
+    <div style="height: 600px" class="flex flex-col items-center py-8 px-32 relative">
 
         <div class=" flex  items-center flex-row-reverse">
-            <div class="flex-1 flex items-end bg-red-400 self-end">
+            <div class="flex-1 flex justify-end self-end">
                 <img src="../../../assets/feature-2.png">
             </div>
 
