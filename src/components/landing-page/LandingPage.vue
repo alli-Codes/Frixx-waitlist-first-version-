@@ -5,8 +5,8 @@
                 <!-- <img src="../assets/images/headline.png" class="h-80"> -->
 
                 <div id="headline" class="text-5xl font-bold flex w-80 relative">
-                    <h1 style="line-height: 64px">A community for <h1 style="display: inline" class="text-primary">Tech Enthusiasts</h1> fueled by knowledge</h1>
-                    <Circle />
+                    <h1 style="line-height: 64px; z-index: 10">A community for <h1 style="display: inline" class="text-primary">Tech Enthusiasts</h1> fueled by knowledge</h1>
+                    <Circle :style="styles" />
                     <!-- <img src="../assets/images/circle.svg" class="absolute inset-y-40"> -->
                 </div>
 
@@ -37,6 +37,15 @@
         components: {
             Circle,
             Mockup
+        },
+        data(){
+            return{
+                styles: {
+                    strokeColor: '#8E25B6',
+                    top: '40',
+                    left: '-27',
+                }
+            }
         }
 
     }
