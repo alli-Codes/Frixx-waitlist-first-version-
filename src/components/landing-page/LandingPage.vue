@@ -14,7 +14,7 @@
 
                 <div id="input__field" class="w-full flex mt-8 shadow-3xl rounded">
                     <input id="input" type="text" class=" flex shrink w-4/5 p-4" placeholder="Enter your email address">
-                    <button class="flex shrink w-1/5 flex items-center justify-center font-semibold bg-green shadow-3xl rounded-r">Join the waitlist</button>
+                    <button class="flex shrink w-40 flex items-center justify-center font-semibold bg-green shadow-3xl rounded-r">Join the waitlist</button>
                 </div>
             </div>
 
