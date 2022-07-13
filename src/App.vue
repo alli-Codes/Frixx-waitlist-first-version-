@@ -1,11 +1,11 @@
 <template>
   <Header />
   <LandingPage />
-  <ConnectPage />
-  <FeaturePage />
-  <FaqPage />
-  <HelpPage />
-  <Footer />
+  <ConnectPage v-show="false" />
+  <FeaturePage v-show="false" />
+  <FaqPage v-show="false" />
+  <HelpPage v-show="false" />
+  <Footer v-show="false" />
 </template>
 
 <script setup>
