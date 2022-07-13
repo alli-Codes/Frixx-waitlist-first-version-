@@ -33,7 +33,7 @@
             return{
                 styles: {
                     strokeColor: '#8E25B6',
-                    top: '',
+                    top: '10',
                     left: '',
                 }
             }
