@@ -4,17 +4,20 @@
 
         <div class=" flex justify-around items-center ">
             <div class="flex-1">
-                <img src="../../../assets/feature-3.png">
+                <img src="/images/feature-3.png">
             </div>
 
-            <div class="flex-1 h-64 flex flex-col items-start justify-evenly">
-                <h1 class="font-semibold text-2xl">Advanced Q/A Forums</h1>
-                <p>Imperdiet sit eu sed tortor egestas id. A consectetur ac fringilla nisi. Vitae et sed ante dictum diam scelerisque vulputate at pretium. Sit porttitor ac tortor pretium pellentesque. Duis fermentum.</p>
-                <button class="font-semibold bg-green p-4 rounded">Join the waitlist</button>
+            <div class="flex-1 h-64 flex flex-col items-start justify-evenly space-y-8">
+                <h1 class="font-bold font-gorgagrotesque-bold text-3xl">Advanced Q/A Forums</h1>
+                <p class="font-jakarta">Imperdiet sit eu sed tortor egestas id. A consectetur ac fringilla
+                    nisi. Vitae et sed ante dictum
+                    diam scelerisque vulputate at pretium. Sit porttitor ac tortor pretium pellentesque. Duis fermentum.
+                </p>
+                <button class="button">Join the waitlist</button>
             </div>
         </div>
     </div>
-    
+
 </template>
 
 <script>
