@@ -2,7 +2,7 @@
   <Header />
   <LandingPage />
   <ConnectPage />
-  <FeaturePage v-show="false" />
+  <FeaturePage />
   <FaqPage v-show="false" />
   <HelpPage v-show="false" />
   <Footer v-show="false" />

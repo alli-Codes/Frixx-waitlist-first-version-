@@ -3,7 +3,7 @@
         <div id="connect__page"
             class="bg-connect-pattern bg-no-repeat bg-contain bg-bottom lg:bg-center  lg:h-screen w-full lg:flex flex-col  items-center content-center relative">
             <div class="flex items-center justify-center relative">
-                <h1 class="text-3xl font-gorgagrotesque-regular font-bold text-center w-[450px] z-10">Connect
+                <h1 class="text-2xl lg:text-4xl font-gorgagrotesque-regular font-bold text-center w-[450px] z-10">Connect
                 with users with similar technological <br /> interests.</h1>
                 <Circle :style="styles" />
             </div>

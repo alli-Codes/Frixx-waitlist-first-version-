@@ -1,8 +1,8 @@
 <template>
-    <div id="container">
-        <div class="flex flex-col items-center content-center	 relative">
-            <h1 class="font-bold text-4xl p-16 z-10">Some of Our Features</h1>
-            <Circle :style="styles" />
+    <div id="container" class="lg:px-8 py-4">
+        <div class=" mb-20 flex flex-row items-center justify-center relative">
+            <h1 class="font-bold text-2xl lg:text-4xl font-gorgagrotesque-regular lg:p-16 z-10">Some of Our Features</h1>
+            <Circle :style="styles" :w="360" :h="140" />
         </div>
 
         <Section1 /> 
@@ -33,8 +33,8 @@
             return{
                 styles: {
                     strokeColor: '#8E25B6',
-                    top: '10',
-                    left: '',
+                    // top: '10',
+                    // left: '',
                 }
             }
          }
