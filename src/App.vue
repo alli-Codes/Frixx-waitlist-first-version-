@@ -1,7 +1,7 @@
 <template>
   <Header />
   <LandingPage />
-  <ConnectPage v-show="false" />
+  <ConnectPage />
   <FeaturePage v-show="false" />
   <FaqPage v-show="false" />
   <HelpPage v-show="false" />
