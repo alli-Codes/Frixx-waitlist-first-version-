@@ -12,7 +12,7 @@
                             <h1 style="display: inline" class="relative z-[100]">for&nbsp;<span
                                     class="text-primary">Tech
                                     <br /> Enthusiasts</span></h1>
-                            <Circle :style="styles" :w="360" :h="140" />
+                            <Circle :style="styles" class="w-80 lg:w-auto h-36 lg:h-auto" />
                         </div>
                         <span class="relative z-[100]">
                             fueled by <br /> knowledge
