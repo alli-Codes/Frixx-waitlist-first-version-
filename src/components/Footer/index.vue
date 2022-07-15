@@ -1,10 +1,10 @@
 <template>
     <div>
 
-        <div class="py-3 px-32 relative grid space-y-5">
+        <div class="py-3 px-8 lg:pl-16 relative grid space-y-5 mt-8">
             <Icon :w="140" :h="80" />
             <div class="flex flex-col space-y-6">
-                <p class="font-normal w-3/6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui laboriosam
+                <p class="font-normal lg:w-3/6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui laboriosam
                     asperiores, atque consequuntur
                     excepturi soluta? </p>
                 <div class="flex flex-row gap-4 text-green">

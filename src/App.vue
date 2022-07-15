@@ -5,7 +5,7 @@
   <FeaturePage />
   <FaqPage />
   <HelpPage />
-  <Footer v-show="false" />
+  <Footer />
 </template>
 
 <script setup>
