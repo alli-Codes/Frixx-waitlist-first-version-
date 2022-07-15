@@ -26,10 +26,12 @@
                     dignissim viverra ultrices enim, massa dolor dolor eget. Ultrices ornare quam tristique pharetra.
                     Vel, sit scelerisque commodo libero,</p>
 
-                <div id="input__field" class="w-full flex mt-8 shadow-3xl rounded">
-                    <input id="input" type="text" class=" flex shrink w-4/5 p-3" placeholder="Enter your email address">
-                    <button
-                        class="flex shrink w-40  items-center justify-center text-center font-semibold bg-green shadow-3xl rounded-r">
+                <div id="input__field" class="w-full h-28 lg:h-16 flex flex-col justify-between lg:flex-row mt-8 lg:shadow-3xl rounded">
+                    <input id="input" type="email" class=" flex flex-1 lg:flex-none shrink lg:w-4/5 text-center lg:text-left lg:p-8 placeholder:text-center lg:placeholder:text-left placeholder:font-semibold border border-green border-solid disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+      invalid:border-pink-500 invalid:text-pink-600
+      focus:invalid:border-pink-500 focus:invalid:ring-pink-500" @input="emailValidity" placeholder="Enter your email address">
+                    <button :disabled="isEnabled"
+                        class=" mt-4 lg:mt-0 flex flex-1 lg:flex-none shrink lg:w-40  items-center justify-center text-center font-semibold  lg:shadow-3xl rounded-r" :class="[bgColor]">
                         <p class="text-center text-sm lg:text-base">
 
                             Join the waitlist
@@ -68,7 +70,23 @@ export default {
                 strokeColor: '#8E25B6',
                 top: '-25',
                 left: '-27',
-            }
+            },
+            bgColor: 'bg-emerald-50',
+            isDisabled: true,
+        }
+    },
+
+    methods: {
+        greet(){
+            !this.isDisabled ? this.bgColor = 'bg-green' : this.bgColor = 'bg-emerald-50'
+        },
+        emailValidity(e){
+            if( e.target.checkValidity() && e.data)
+                this.isDisabled = false
+            else
+                this.isDisabled = true
+
+            this.greet()
         }
     }
 
@@ -85,7 +103,5 @@ export default {
     outline: none;
 }
 
-#input::placeholder {
-    font-weight: 600;
-}
+
 </style>
