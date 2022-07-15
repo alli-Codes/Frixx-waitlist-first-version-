@@ -4,7 +4,7 @@
   <ConnectPage />
   <FeaturePage />
   <FaqPage />
-  <HelpPage v-show="false" />
+  <HelpPage />
   <Footer v-show="false" />
 </template>
 
