@@ -2,7 +2,7 @@
     <div id="container" class="lg:px-8 py-4">
         <div class=" mb-20 flex flex-row items-center justify-center relative">
             <h1 class="font-bold text-2xl lg:text-4xl font-gorgagrotesque-regular lg:p-16 z-10">Some of Our Features</h1>
-            <Circle :style="styles" :w="360" :h="140" />
+            <Circle :style="styles" class="w-80 h-36" />
         </div>
 
         <Section1 /> 
