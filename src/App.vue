@@ -3,7 +3,7 @@
   <LandingPage />
   <ConnectPage />
   <FeaturePage />
-  <FaqPage v-show="false" />
+  <FaqPage />
   <HelpPage v-show="false" />
   <Footer v-show="false" />
 </template>
