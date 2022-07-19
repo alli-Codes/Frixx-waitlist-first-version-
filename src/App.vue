@@ -1,11 +1,13 @@
 <template>
-  <Header />
-  <LandingPage />
-  <ConnectPage />
-  <FeaturePage />
-  <FaqPage />
-  <HelpPage />
-  <Footer />
+  <div>
+    <Header v-show="true" />
+    <LandingPage v-show="true" />
+    <ConnectPage v-show="true" />
+    <FeaturePage v-show="true" />
+    <FaqPage v-show="true" />
+    <HelpPage v-show="true" />
+    <Footer v-show="true" />
+  </div>
 </template>
 
 <script setup>
@@ -23,7 +25,7 @@ import Footer from './components/Footer/index.vue'
 @import '@/assets/base.css';
 
 #app {
-  /*max-width: 1280px;*/
+  width: 100vw;
   background-color: #FAFCFC;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
 
-    <div class=" flex flex-col items-center py-8 px-8 lg:px-32 relative">
+    <div class=" flex flex-col items-center py-8 px-0 lg:px-32 relative">
 
         <div class=" flex flex-col lg:flex-row justify-around items-center lg:flex-row-reverse">
             <div class="lg:flex-1 lg:flex justify-end self-end">
