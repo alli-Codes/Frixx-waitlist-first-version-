@@ -42,7 +42,7 @@
 
             <div id="landing__image-section" class=" h-full lg:w-1/2 flex justify-center items-center py-16 lg:py-0">
                 <!-- <Mockup /> -->
-                <img src="../../assets/mockup.svg" class="w-fit" v-show="false" alt="">
+                <img src="../../assets/mockup.svg" class="w-fit" v-show="true" alt="">
             </div>
         </div>
 
