@@ -31,7 +31,7 @@
       invalid:border-pink-500 invalid:text-pink-600
       focus:invalid:border-pink-500 focus:invalid:ring-pink-500" @input="emailValidity" placeholder="Enter your email address">
                     <button
-                        class=" bg-green mt-4 lg:mt-0 flex flex-1 lg:flex-none shrink lg:w-40  items-center justify-center text-center font-semibold  lg:shadow-3xl rounded-r" :class="[bgColor]">
+                        class=" bg-green mt-4 lg:mt-0 flex flex-1 lg:flex-none shrink lg:w-40  items-center justify-center text-center font-semibold  lg:shadow-3xl rounded-r">
                         <p class="text-center text-sm lg:text-base">
 
                             Join the waitlist

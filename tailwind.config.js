@@ -12,6 +12,7 @@ module.exports = {
       colors: {
         primary: "#ACCCC9",
         green: "#4BB064",
+        dull: "#ffffffad"
       },
 
       backgroundImage: {
