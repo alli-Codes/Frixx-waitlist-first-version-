@@ -7,18 +7,12 @@
             <Circle v-show="false" :style="styles" class="w-80 lg:w-auto h-36 lg:h-auto" />
             <span>Reserve your spot</span>
         </div>
-        <div id="input__field" class=" w-full lg:w-1/2 h-28 lg:h-16 flex flex-col justify-between lg:flex-row mt-8 lg:shadow-3xl rounded">
-                    <input id="input" type="email" class=" flex flex-1 lg:flex-none shrink lg:w-4/5 text-center lg:text-left lg:p-8 placeholder:text-center lg:placeholder:text-left placeholder:font-semibold border border-green border-solid disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
-      invalid:border-pink-500 invalid:text-pink-600
-      focus:invalid:border-pink-500 focus:invalid:ring-pink-500" @input="emailValidity" placeholder="Enter your email address">
-                    <button
-                        class=" bg-green mt-4 lg:mt-0 flex flex-1 lg:flex-none shrink lg:w-40  items-center justify-center text-center font-semibold  lg:shadow-3xl rounded-r" :class="[bgColor]">
-                        <p class="text-center text-sm lg:text-base">
-
-                            Join the waitlist
-                        </p>
-                    </button>
-        </div>
+        <form id="input__field" class="w-full lg:w-1/2 h-28 lg:h-16 flex flex-col justify-between lg:flex-row mt-8 lg:shadow-3xl rounded">
+                    <input id="input" type="email" class=" flex flex-1 lg:flex-none shrink lg:w-4/5 text-center lg:text-left lg:p-8 placeholder:text-center lg:placeholder:text-left placeholder:font-semibold border border-green lg:border-none  border-solid rounded lg:rounded-none" :class="isValid.color" @input="emailValidity" placeholder="Enter your email address" ref="input">
+                    <input  type="submit" value="Join the waitlist"
+                        class=" bg-green mt-4 lg:mt-0 flex flex-1 lg:flex-none shrink lg:w-40  items-center justify-center text-center font-semibold  lg:shadow-3xl rounded lg:rounded-r">
+                        
+                </form>
         <!-- <div class="flex flex-row justify-center items-center gap-4">
             <img src="/images/xavier.png" class="w-12 h-12" alt="xavier photo's">
             <div class="flex flex-col space-y-2">
@@ -30,7 +24,7 @@
 </template>
 
 
-<script setup>
+<script>
 import Circle from '../landing-page/Circle.vue';
 import { ref } from 'vue';
 
@@ -41,4 +35,32 @@ const styles = ref({
     top: '-10',
     left: '',
 })
+
+export default{
+    data() {
+        return {
+            bgColor: 'bg-emerald-50',
+                    isValid: {
+                        color: '',
+                        status: false
+                    },
+                }
+            },
+
+            methods: {
+                check(){
+                    this.isValid.status ? this.isValid.color = 'border-green' : this.isValid.color = 'border-pink-400'
+                },
+                emailValidity(){
+                    this.isValid.status = isEmail(this.$refs.input.value)
+                    this.check()
+                }
+            }
+}
 </script>
+
+<style scoped>
+    input{
+        outline: none;
+    }
+</style>
