@@ -1,6 +1,6 @@
 <template>
 
-    <div class=" flex flex-col items-center  px-0 lg:px-32 relative">
+    <div data-aos="fade-right" data-aos-duration="1000" class=" flex flex-col items-center  px-0 lg:px-32 relative">
         
 
         <div class=" flex flex-col lg:flex-row justify-around items-center ">
@@ -20,11 +20,16 @@
 
 <script>
 
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
     
 
     export default {
         name: 'Section1',
-        
+        created(){
+            AOS.init()
+        }
     }
 
 </script>

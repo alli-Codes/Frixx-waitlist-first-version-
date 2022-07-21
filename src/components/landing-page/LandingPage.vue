@@ -36,7 +36,7 @@
 
             <div id="landing__image-section" class=" h-full lg:w-1/2 flex justify-center items-center py-16 lg:py-0">
                 <!-- <Mockup /> -->
-                <img src="../../assets/mockup.svg" class="w-fit" v-show="false" alt="">
+                <img src="../../assets/mockup.svg" class="w- animate" alt="">
             </div>
         </div>
 
@@ -52,6 +52,8 @@ import {ref} from 'vue'
 import Circle from './Circle.vue'
 import Mockup from './Mockup.vue'
 import isEmail from 'validator/lib/isEmail'
+
+import 'animate.css';
 
 export default {
     name: 'LandingPage',
@@ -82,7 +84,7 @@ export default {
             this.isValid.status = isEmail(this.$refs.input.value)
             this.check()
         }
-    }
+    },
 
 }
 
@@ -96,6 +98,23 @@ export default {
 #input {
     outline: none;
 }
+.animate{
+    animation-name: hover;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    /* animation-fill-mode: forwards; */
+    /* transform: scale(0.9); */
+}
 
+@keyframes hover{
+    from{
+        transform: scale(0.8);
+    }
+    to{
+        transform: scale(0.9);
+    }
+}
 
 </style>

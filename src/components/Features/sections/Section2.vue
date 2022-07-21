@@ -1,8 +1,8 @@
 <template>
 
-    <div class=" flex flex-col items-center py-8 px-0 lg:px-32 relative">
+    <div  class=" flex flex-col items-center py-8 px-0 lg:px-32 relative">
 
-        <div class=" flex flex-col lg:flex-row justify-around items-center lg:flex-row-reverse">
+        <div data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000" class=" flex flex-col lg:flex-row justify-around items-center lg:flex-row-reverse">
             <div class="lg:flex-1 lg:flex justify-end self-end">
                 <img src="/images/feature-2.png">
             </div>
@@ -18,7 +18,8 @@
 </template>
 
 <script>
-
+    import AOS from 'aos'
+    import 'aos/dist/aos.css'
     import Circle from '../../landing-page/Circle.vue'
 
     export default {
@@ -32,7 +33,10 @@
                     left: '37rem',
                 }
             }
-         }
+         },
+         created(){
+            AOS.init()
+        }
     }
 
 </script>
