@@ -23,11 +23,9 @@
 <script>
     import AOS from 'aos'
     import 'aos/dist/aos.css'
-    import Circle from '../../landing-page/Circle.vue'
 
     export default {
         name: 'Section1',
-        components: {Circle},
         data(){
             return{
                 styles: {
