@@ -1,5 +1,5 @@
 <template>
-    <div id="container" class=" px-4 lg:px-8 py-4 overflow-x-hidden">
+    <div id="container" class="  px-4 lg:px-8 py-4 overflow-x-hidden">
         <div class=" mb-20 flex flex-row items-center justify-center">
             <h1 class="font-bold text-2xl lg:text-4xl font-gorgagrotesque-regular lg:p-16 z-10">Some of Our Features</h1>
             <Circle v-show="false" :style="styles" class="w-80 h-36" />

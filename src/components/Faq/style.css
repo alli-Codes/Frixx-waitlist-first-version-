@@ -39,6 +39,10 @@ body {
   align-items: center;
 } */
 
-.swiper-pagination-bullet{
+/* .swiper-pagination-bullet{
     background: #002B23;
+} */
+
+.bg-green{
+  background-color: green;
 }

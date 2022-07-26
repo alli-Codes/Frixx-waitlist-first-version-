@@ -1,4 +1,5 @@
 <template>
+<div class="">
   <swiper
     :slidesPerView="1"
     :spaceBetween="30"
@@ -11,18 +12,20 @@
       clickable: true,
     }"
     :modules="modules"
+
+    :style="{'--swiper-pagination-color': 'green', '--swiper-pagination-bullet-inactive-color': 'gray'}"
     
-    class="h-96 w-full lg:w-3/4 p-8 flex flex-col-reverse items-center"
+    class=" h-96 w-full lg:w-3/4 p-8 flex flex-col-reverse items-center"
   >
-    <div>
-        <img src="/images/quote.svg" alt="" class="h-16 w-8">
-    </div>
+        <QuoteIcon :quoteColor="quoteColor" class=" w-[2rem] mb-8" />
     <swiper-slide v-for="person in person" class="h-full flex items-center justify-center flex-col"><Faq :person="person" /></swiper-slide>
 
   </swiper>
+</div>
 </template>
 <script>
 import Faq from './Faq.vue'
+import QuoteIcon from './QuoteIcon.vue'
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
 
@@ -43,7 +46,8 @@ export default {
     Faq,
     Swiper,
     SwiperSlide,
-  }, 
+    QuoteIcon
+}, 
   data(){
             return{
                 person: [
@@ -68,7 +72,7 @@ export default {
                         quote: 'Imperdiet sit eused tortor egestas id. Aconsectetur ac fringillanisi.'
                     },
                 ],
-                index: 0,
+                quoteColor: 'fill-[#182220] dark:fill-white'
             }
   },
   setup() {
@@ -78,3 +82,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+  .red{
+    background-color: red;
+  }
+</style>

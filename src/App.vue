@@ -1,12 +1,14 @@
 <template>
-  <div class="w-full">
-    <Header v-show="true" />
+  <div class="w-full " ref="divs">
+    <div class="dark:bg-gradient-to-b from-topColor to-bottomColor dark:text-white">
+    <Header v-show="true" :dark="darkMode" />
     <LandingPage v-show="true" />
     <ConnectPage v-show="true" />
     <FeaturePage v-show="true" />
     <FaqPage v-show="true" />
     <HelpPage v-show="true" />
     <Footer v-show="true" />
+    </div>
   </div>
 </template>
 
@@ -30,6 +32,14 @@ import Footer from './components/Footer/index.vue'
     HelpPage,
     Footer
   },
+  methods: {
+    darkMode(){
+      this.$refs.divs.classList.toggle('dark')
+    }
+  },
+  mounted(){
+    // this.darkMode()
+  }
   
  }
 </script>
