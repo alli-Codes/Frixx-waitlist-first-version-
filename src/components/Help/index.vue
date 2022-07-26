@@ -7,7 +7,7 @@
             <Circle v-show="false" :style="styles" class="w-80 lg:w-auto h-36 lg:h-auto" />
             <span>Reserve your spot</span>
         </div>
-        <form id="input__field" class=" lg:bg-white w-full lg:w-1/2 h-28 lg:h-16 flex flex-col justify-between lg:flex-row mt-8 lg:shadow-3xl rounded">
+        <form id="input__field" class=" lg:bg-white w-full lg:w-1/2 h-28 lg:h-16 flex flex-col justify-between lg:flex-row mt-8 lg:shadow-3xl lg:dark:shadow-lightShadow dark:text-black rounded">
                     <input id="input" type="email" class=" flex flex-1 lg:flex-none shrink lg:w-4/5 text-center lg:text-left lg:p-8 placeholder:text-center lg:placeholder:text-left placeholder:font-semibold border border-green lg:border-none  border-solid rounded lg:rounded-none lg:rounded-l" :class="isValid.color" @input="emailValidity" placeholder="Enter your email address" ref="input">
                     <input  type="submit" value="Join the waitlist"
                         class=" bg-green mt-4 lg:mt-0 flex flex-1 lg:flex-none shrink lg:w-40  items-center justify-center text-center font-semibold  lg:shadow-3xl rounded lg:rounded-r">

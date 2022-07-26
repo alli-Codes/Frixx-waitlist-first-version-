@@ -35,6 +35,8 @@ import Footer from './components/Footer/index.vue'
   methods: {
     darkMode(){
       this.$refs.divs.classList.toggle('dark')
+      console.log(this.$refs.divs.classList.contains('dark'))
+      return this.$refs.divs.classList.contains('dark')
     }
   },
   mounted(){

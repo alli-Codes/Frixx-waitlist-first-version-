@@ -1,8 +1,10 @@
 <template>
-    <div id="header" ref="header" class="bg-slate-50 w-full h-16 px-4 lg:px-32 flex justify-between items-center fixed top-0 z-[9999]">
-        <Icon :darks="darks" />
+    <div id="header" ref="header" class="bg-dull w-full h-16 px-4 lg:px-32 flex justify-between items-center fixed top-0 z-[9999] shadow-3xl dark:shadow-lightShadow backdrop-blur-md">
+        <Icon :darks="darks" class="fill-[#182220] dark:fill-[#ffffff]" />
+        <!-- <Icon :darks="darks" class="fill-[#182220] dark:fill-[#182220]" /> -->
+
         <div class="cursor-pointer" @click="dark">
-            <img src="/images/mode.png" class="w-4">
+            <img v-if="isLightMode ? mode = 'light' : mode = 'dark'" :src="['/images/' + mode +'.png']" class="w-[1.2rem]">
         </div>
     </div>
 </template>
@@ -24,16 +26,19 @@ export default {
     components: { Icon },
     data(){
         return {
-            fade: 'fade-down'
+            fade: 'fade-down',
+            // isLight: this.darks(),
         }
     },
     props: {
         dark: Function,
+        isLightMode: Boolean
     },
     methods: {
         darks(){
-            console.log('Hello')
+            this.dark()
+            console.log(this.isLight)
         }
-    }
+    },
 }
 </script>

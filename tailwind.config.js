@@ -23,6 +23,7 @@ module.exports = {
 
       boxShadow: {
         "3xl": "0px 4px 8px rgba(0, 0, 0, 0.05)",
+        "lightShadow": "3px 3px 10px rgb(0 184 211 / 50%)"
       },
       fontFamily: {
         "gorgagrotesque-bold": ["gorgagrotesque-bold"],

@@ -2,37 +2,34 @@
     <div>
 
         <div class="py-3 px-4 lg:pl-16 relative grid space-y-5 mt-8">
-            <Icon :w="140" :h="80" />
+            <Icon :w="140" :h="80" class="fill-[#182220] dark:fill-[#ffffff]" />
             <div class="flex flex-col space-y-6">
                 <p class="font-normal lg:w-3/6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui laboriosam
                     asperiores, atque consequuntur
                     excepturi soluta? </p>
                 <div class="flex flex-row gap-4 text-green">
-                    <div class="rounded-full grid place-items-center px-3 py-3 w-12 h-12 border border-primary">
-                        <a href="https://facebook.com/frixxapp" target="_blank" rel="noopener noreferrer">
+
+                        <a href="https://facebook.com/frixxapp" class="rounded-full flex justify-center items-center w-12 h-12 border border-primary hover:text-white hover:bg-green transition" target="_blank" rel="noopener noreferrer">
 
                             <i class="fab fa-facebook"></i>
                         </a>
-                    </div>
-                    <div class="rounded-full grid place-items-center px-3 py-3 w-12 h-12 border border-primary">
-                        <a href="https://twitter.com/frixxapp" target="_blank" rel="noopener noreferrer">
+
+                        <a href="https://twitter.com/frixxapp" class="rounded-full flex justify-center items-center w-12 h-12 border border-primary hover:text-white hover:bg-green transition" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-twitter"></i>
                         </a>
-                    </div>
-                    <div class="rounded-full grid place-items-center px-3 py-3 w-12 h-12 border border-primary">
-                        <a href="https://linkedin/company/frixxapp" target="_blank" rel="noopener noreferrer">
+                    <!-- <div > -->
+                        <a href="https://linkedin/company/frixxapp" class=" rounded-full flex justify-center items-center w-12 h-12 border border-primary hover:text-white hover:bg-green transition" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                    </div>
-                    <div class="rounded-full grid place-items-center px-3 py-3 w-12 h-12 border border-primary">
-                        <i class="fab fa-instagram"></i>
-                        <a href="https://instagram.com/frixxapp" target="_blank" rel="noopener noreferrer"></a>
-                    </div>
+                    <!-- </div> -->
+                        <a href="https://instagram.com/frixxapp" class="rounded-full flex justify-center items-center w-12 h-12 border border-primary hover:text-white hover:bg-green transition" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                        </a>
                 </div>
             </div>
-            <div class="flex justify-start items-start pb-10">
+            <div class="flex py-8">
                 <a href="#" class="cursor-pointer flex flex-row justify-center items-center gap-3">
-                    Back to top <i class="fa-solid fa-angle-up"></i>
+                    Back to top <i class="fa-solid fa-angle-up text-2xl "></i>
                 </a>
             </div>
         </div>
