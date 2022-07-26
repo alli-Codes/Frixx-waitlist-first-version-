@@ -1,22 +1,11 @@
 <template>
     <div id="container" class="lg:h-screen lg:flex flex-col justify-between pt-20 lg:pt-8">
         <div id="landing__page" class=" lg:h-full lg:flex flex-row items-center justify-center">
-            <div id="landing__text-section" class=" w-full lg:w-1/2 flex flex-col px-4 lg:pl-16  items-start justify-center">
+            <div id="landing__text-section" class=" w-full lg:w-1/2 flex flex-col px-4 lg:pl-16  items-start justify-center lg:space-y-24">
 
-                <div v-show="true" id="headline" class="text-4xl mt-5 font-gorgagrotesque-regular font-bold flex">
-                    <h1 style="line-height: 44px; z-index: 10" class="">
-                        <span class="relative z-[100]">
-                            A community
-                        </span>
-                        <div class="flex items-center relative">
-                            <h1 style="display: inline" class="relative z-[100]">for&nbsp;<span
-                                    class="text-primary">Tech
-                                    <br /> Enthusiasts</span></h1>
-                            <Circle :style="styles" v-show="false" class="w-80 lg:w-auto h-36 lg:h-auto" />
-                        </div>
-                        <span class="relative z-[100]">
-                            fueled by <br /> knowledge
-                        </span>
+                <div v-show="true" id="headline" class=" w-full lg:w-3/4 text-4xl lg:text-6xl mt-5 font-gorgagrotesque-regular font-bold">
+                    <h1 style="z-index: 10" class="w-full">
+                       A community for <br /> <span class="text-primary">Tech <br /> Enthusiasts</span> <br /> fueled by knowledge
                     </h1>
 
                     <!-- <img src="../assets/images/circle.svg" class="absolute inset-y-40"> -->
