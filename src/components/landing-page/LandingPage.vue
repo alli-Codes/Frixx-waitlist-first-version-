@@ -25,7 +25,7 @@
 
             <div id="landing__image-section" class=" h-full lg:w-1/2 flex justify-center items-center py-16 lg:py-0">
                 <!-- <Mockup /> -->
-                <img src="../../assets/mockup.svg" class="w- animate" alt="">
+                <img src="../../assets/mockup.svg" class=" animate" alt="">
             </div>
         </div>
 
