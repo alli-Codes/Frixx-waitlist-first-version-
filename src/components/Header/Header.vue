@@ -3,41 +3,31 @@
         <Icon :darks="darks" class="fill-[#182220] dark:fill-[#ffffff]" />
         <!-- <Icon :darks="darks" class="fill-[#182220] dark:fill-[#182220]" /> -->
 
-        <div class="cursor-pointer" @click="dark">
-            <img v-if="isLightMode ? mode = 'light' : mode = 'dark'" :src="['/images/' + mode +'.png']" class="w-[1.2rem]">
+        <div class="cursor-pointer" @click="changeMode">
+            <img v-if="isLight ? mode = 'light' : mode = 'dark'" :src="['/images/' + mode +'.png']" class="w-[1.2rem]">
         </div>
     </div>
 </template>
 
 <script>
 import Icon from './Icon.vue'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-
-const checkHeight = () => {
-    console.log(window.scrollY)
-    // console.log(vue.$refs.header)
-}
-
-// window.addEventListener('scroll', checkHeight)
 
 export default {
     name: 'Header',
     components: { Icon },
     data(){
         return {
-            fade: 'fade-down',
-            // isLight: this.darks(),
+            isLight: true,
         }
     },
     props: {
-        dark: Function,
-        isLightMode: Boolean
+        darkMode: Function,
     },
     methods: {
-        darks(){
-            this.dark()
-            console.log(this.isLight)
+        changeMode(){
+            this.darkMode()
+            this.isLight ? this.isLight = false : this.isLight = true
+
         }
     },
 }

@@ -1,7 +1,7 @@
 <template>
   <div class="w-full " ref="divs">
     <div class="dark:bg-gradient-to-b from-topColor to-bottomColor dark:text-white">
-    <Header v-show="true" :dark="darkMode" />
+    <Header v-show="true" :darkMode="darkMode" />
     <LandingPage v-show="true" />
     <ConnectPage v-show="true" />
     <FeaturePage v-show="true" />
@@ -35,13 +35,8 @@ import Footer from './components/Footer/index.vue'
   methods: {
     darkMode(){
       this.$refs.divs.classList.toggle('dark')
-      console.log(this.$refs.divs.classList.contains('dark'))
-      return this.$refs.divs.classList.contains('dark')
     }
   },
-  mounted(){
-    // this.darkMode()
-  }
   
  }
 </script>
