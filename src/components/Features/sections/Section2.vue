@@ -10,7 +10,7 @@
             <div class=" py-4 lg:flex-1 lg:h-64 flex flex-col items-start justify-evenly space-y-4">
                 <h1 class="font-bold font-gorgagrotesque-bold text-2xl">Access to userbase of well educated, highly skilled proffessionals</h1>
                 <p>Imperdiet sit eu sed tortor egestas id. A consectetur ac fringilla nisi. Vitae et sed ante dictum diam scelerisque vulputate at pretium. Sit porttitor ac tortor pretium pellentesque. Duis fermentum.</p>
-                <button class="button lg:self-end">Join the waitlist</button>
+                <a href="#faq" class="lg:self-end"><button class="button">Join the waitlist</button></a>
             </div>
         </div>
     </div>

@@ -13,7 +13,7 @@
                 <p>Imperdiet sit eu sed tortor egestas id. A consectetur ac fringilla
                     nisi. Vitae et sed ante dictum
                     diam scelerisque vulputate at pretium. Sit porttitor ac tortor pretium pellentesque. Duis fermentum.</p>
-                <button class="button">Join the waitlist</button>
+                <a href="#faq"><button class="button">Join the waitlist</button></a>
             </div>
         </div>
     </div>

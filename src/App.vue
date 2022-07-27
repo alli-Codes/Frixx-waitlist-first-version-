@@ -45,6 +45,10 @@ import Footer from './components/Footer/index.vue'
 
 @import '@/assets/base.css';
 
+*{
+  scroll-behavior: smooth;
+}
+
 #app {
   /* width: 100vw; */
   background-color: #FAFCFC;
