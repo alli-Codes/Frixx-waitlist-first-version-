@@ -37,7 +37,6 @@ import {ref} from 'vue'
 import Circle from './Circle.vue'
 import Form from '../../resuable/Form.vue'
 import Mockup from './Mockup.vue'
-import isEmail from 'validator/lib/isEmail'
 
 import 'animate.css';
 
@@ -60,16 +59,6 @@ export default {
                 color: '',
                 status: false
             },
-        }
-    },
-
-    methods: {
-        check(){
-            this.isValid.status ? this.isValid.color = 'border-green' : this.isValid.color = 'border-pink-400'
-        },
-        emailValidity(){
-            this.isValid.status = isEmail(this.$refs.input.value)
-            this.check()
         }
     },
 

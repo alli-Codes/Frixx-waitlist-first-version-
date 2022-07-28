@@ -11,6 +11,8 @@
 </template>
 
 <script>
+    import isEmail from 'validator/lib/isEmail'
+
     export default {
         name: 'Form',
         data(){
