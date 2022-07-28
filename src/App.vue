@@ -1,7 +1,7 @@
 <template>
-  <div class="w-full " ref="divs">
+  <div :class="['w-full', mode]" ref="divs">
     <div class="dark:bg-gradient-to-b from-topColor to-bottomColor dark:text-white">
-    <Header v-show="true" :darkMode="darkMode" />
+    <Header v-show="true" :darkMode="darkMode" :mode="mode" />
     <LandingPage v-show="true" />
     <ConnectPage v-show="true" />
     <FeaturePage v-show="true" />
@@ -32,13 +32,32 @@ import Footer from './components/Footer/index.vue'
     HelpPage,
     Footer
   },
-  methods: {
-    darkMode(){
-      this.$refs.divs.classList.toggle('dark')
+  data(){
+    return {
+      mode: 'light'
     }
   },
+  methods: {
+    darkMode(){
+      let invertMode = 'dark'
+      if(this.mode == 'light'){
+        invertMode = 'dark'
+        this.mode = 'dark'
+      }else{
+        invertMode = 'light'
+        this.mode = 'light'
+      }
+     this.$refs.divs.classList.replace(this.mode, invertMode)
+     localStorage.setItem('userPreference', this.mode)
+     return this.mode
+    },
   
- }
+  },
+  created(){
+    let data = localStorage.getItem('userPreference') || 'light'
+    this.mode = data
+  }
+ } 
 </script>
 
 <style>
