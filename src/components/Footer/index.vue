@@ -7,7 +7,7 @@
                 <p class="font-normal lg:w-3/6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui laboriosam
                     asperiores, atque consequuntur
                     excepturi soluta? </p>
-                <div class="flex flex-row gap-4 text-green">
+                <div class="w-full lg:w-80 flex flex-row justify-evenly text-green">
 
                         <a href="https://facebook.com/frixxapp" class="rounded-full flex justify-center items-center w-12 h-12 border border-primary hover:text-white hover:bg-green transition" target="_blank" rel="noopener noreferrer">
 
