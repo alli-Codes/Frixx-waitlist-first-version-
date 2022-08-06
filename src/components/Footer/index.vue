@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="bg-green">
 
         <div class="py-3 px-32 relative grid space-y-5">
             <Icon :w="140" :h="80" />
