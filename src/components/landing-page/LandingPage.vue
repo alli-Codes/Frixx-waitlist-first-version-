@@ -1,7 +1,8 @@
 <template>
     <div id="container" class="lg:h-screen lg:flex flex-col justify-between pt-20 lg:pt-8">
         <div id="landing__page" class=" lg:h-full lg:flex flex-row items-center justify-center">
-            <div id="landing__text-section" class=" w-full lg:w-1/2 flex flex-col px-8 lg:pl-16  items-start justify-center">
+            <div id="landing__text-section"
+                class=" w-full lg:w-1/2 flex flex-col px-8 lg:pl-16  items-start justify-center">
 
                 <div id="headline" class="text-4xl mt-5 font-gorgagrotesque-regular font-bold flex w-80 relative">
                     <h1 style="line-height: 44px; z-index: 10" class="">
@@ -27,10 +28,11 @@
                     Vel, sit scelerisque commodo libero,</p>
 
                 <div id="input__field" class="w-full flex mt-8 shadow-3xl rounded">
-                    <input id="input" type="text" class=" flex shrink w-4/5 p-3" placeholder="Enter your email address">
+                    <input id="input" type="text" class=" flex shrink rounded-l-lg w-4/5 p-3"
+                        placeholder="Enter your email address">
                     <button
                         class="flex shrink w-40  items-center justify-center text-center font-semibold bg-green shadow-3xl rounded-r">
-                        <p class="text-center text-sm lg:text-base">
+                        <p class="text-center text-white text-sm lg:text-base">
 
                             Join the waitlist
                         </p>
