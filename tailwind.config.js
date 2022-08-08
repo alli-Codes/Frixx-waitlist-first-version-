@@ -13,8 +13,11 @@ module.exports = {
         primary: "#ACCCC9",
         green: "#4BB064",
         dull: "#ffffffad",
-        topColor: "#001530",
-        bottomColor: "#000010",
+        // #001530db
+        // topColor: "#001530",
+        topColor: "#022B23",
+        // bottomColor: "#000010",
+        bottomColor: "rgba(0, 0, 0, 0.96)",
       },
 
       backgroundImage: {
