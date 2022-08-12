@@ -3,8 +3,8 @@
     v-show="isActive"
     id="input__field"
     @submit.prevent="
-      async () => {
-        await postData(email);
+      () => {
+        postData(email);
       }
     "
     :email="email"
