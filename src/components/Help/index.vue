@@ -9,7 +9,7 @@
       </h1>
       <span class="font-semibold">Reserve your spot</span>
     </div>
-    <div class="w-1/2 flex justify-center">
+    <div class="w-full lg:w-1/2 flex justify-center">
       <Form
         :postData="postData"
         :isActive="apiResponse.isActive"

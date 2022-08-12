@@ -12,7 +12,7 @@
       >
         <i class="fas fa-close"></i>
       </button>
-      <p>{{ apiMessage }}</p>
+      <p class="text-center">{{ apiMessage }}</p>
     </div>
   </div>
 </template>

@@ -29,7 +29,7 @@
 
   <div
     v-show="!isActive"
-    class="bg-green h-20 w-1/2 py-8 flex flex-col items-center justify-center text-white rounded relative"
+    class="bg-green h-4 mt-8 lg:h-20 w-full lg:w-1/2 py-8 flex flex-col items-center justify-center text-white rounded relative"
   >
     <p class="" v-if="statusMessage === 'success'">You'll recieve an email from us</p>
 

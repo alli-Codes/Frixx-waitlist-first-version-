@@ -27,70 +27,38 @@
             fueled by knowledge
           </h1>
 
-          <div
-            v-show="true"
-            id="headline"
-            class="w-full lg:w-3/4 text-4xl lg:text-6xl mt-5 font-gorgagrotesque-regular font-bold"
-          >
-            <h1 style="z-index: 10" class="w-full">
-              A community for <br />
-              <span class="text-primary"
-                >Tech <br />
-                Enthusiasts</span
-              >
-              <br />
-              fueled by knowledge
-            </h1>
-
-            <!-- <img src="../assets/images/circle.svg" class="absolute inset-y-40"> -->
-          </div>
-
-          <p v-show="false" class="w-full mt-4 font-semibold leading-6 text-[12px]">
-            Adipiscing commodo, eget morbi sagittis. Quis dignissim viverra ultrices enim,
-            massa dolor dolor eget. Ultrices ornare quam tristique pharetra. Vel, sit
-            scelerisque commodo libero,
-          </p>
-
-          <Form />
+          <!-- <img src="../assets/images/circle.svg" class="absolute inset-y-40"> -->
         </div>
 
-        <div
-          id="landing__image-section"
-          class="h-full lg:w-1/2 flex justify-center items-center py-16 lg:py-0"
-        >
-          <!-- <Mockup /> -->
-          <img src="../../assets/mockup.svg" class="animate" alt="" />
-        </div>
+        <p v-show="false" class="w-full mt-4 font-semibold leading-6 text-[12px]">
+          Adipiscing commodo, eget morbi sagittis. Quis dignissim viverra ultrices enim,
+          massa dolor dolor eget. Ultrices ornare quam tristique pharetra. Vel, sit
+          scelerisque commodo libero,
+        </p>
+
+        <Form
+          :postData="postData"
+          :isActive="apiResponse.isActive"
+          :apiMessage="apiResponse.apiMessage"
+          :statusMessage="apiResponse.statusMessage"
+        />
       </div>
 
-      <p v-show="false" class="w-full mt-4 font-semibold leading-6 text-[12px]">
-        Adipiscing commodo, eget morbi sagittis. Quis dignissim viverra ultrices enim,
-        massa dolor dolor eget. Ultrices ornare quam tristique pharetra. Vel, sit
-        scelerisque commodo libero,
-      </p>
-
-      <Form
-        :postData="postData"
-        :isActive="apiResponse.isActive"
-        :apiMessage="apiResponse.apiMessage"
-        :statusMessage="apiResponse.statusMessage"
-      />
+      <div
+        id="landing__image-section"
+        class="h-full lg:w-1/2 flex justify-center items-center py-16 lg:py-0"
+      >
+        <!-- <Mockup /> -->
+        <img src="/images/mockup.png" class="animate" alt="" />
+      </div>
     </div>
 
     <div
-      id="landing__image-section"
-      class="h-full lg:w-1/2 flex justify-center items-center py-16 lg:py-0"
+      id="strap"
+      class="w-full h-20 bg-primary font-semibold font-gorgagrotesque-bold flex items-center justify-center dark:text-black"
     >
-      <!-- <Mockup /> -->
-      <img src="/images/mockup.png" class="animate" alt="" />
+      Join the waitlist to get early access
     </div>
-  </div>
-
-  <div
-    id="strap"
-    class="w-full h-20 bg-primary font-semibold font-gorgagrotesque-bold flex items-center justify-center dark:text-black"
-  >
-    Join the waitlist to get early access
   </div>
 </template>
 
