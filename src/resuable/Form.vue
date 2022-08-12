@@ -1,7 +1,13 @@
 <template>
   <form
+    v-show="isActive"
     id="input__field"
-    @submit.prevent="postData"
+    @submit.prevent="
+      async () => {
+        await postData(email);
+      }
+    "
+    :email="email"
     class="lg:bg-white w-full h-28 lg:h-16 flex flex-col justify-between lg:flex-row mt-8 lg:shadow-3xl lg:dark:shadow-lightShadow rounded"
   >
     <input
@@ -20,6 +26,18 @@
       class="bg-green disabled:bg-[#777] mt-4 lg:mt-0 flex flex-1 lg:flex-none shrink lg:w-40 items-center justify-center text-center font-semibold lg:shadow-3xl rounded lg:rounded-r cursor-pointer transition"
     />
   </form>
+
+  <div
+    v-show="!isActive"
+    class="bg-green h-20 w-1/2 py-8 flex flex-col items-center justify-center text-white rounded relative"
+  >
+    <p class="" v-if="statusMessage === 'success'">You'll recieve an email from us</p>
+
+    <p v-else-if="statusMessage === 'error'">You in already</p>
+
+    <p v-else="statusMessage == ''">Loading</p>
+    <!-- <img src="/images/celebration.gif" class="h-full w-full object-cover absolute" /> -->
+  </div>
 </template>
 
 <script>
@@ -27,14 +45,21 @@ import isEmail from "validator/lib/isEmail";
 
 export default {
   name: "Form",
+  props: {
+    postData: Function,
+    isActive: Boolean,
+    apiMessage: String,
+    statusMessage: String,
+  },
   data() {
     return {
       isValid: {
         color: "",
-        status: false,
+        message: "",
+        statusCode: this.statusMessage,
       },
       email: "",
-      apiMessage: "",
+      // apiResponse: this.apiResponse,
     };
   },
   methods: {
@@ -49,31 +74,6 @@ export default {
       this.isValid.status ? (this.email = userEmail) : undefined;
       this.changeInputStyles();
     },
-    postData() {
-      const waitlistUrl = "http://api.frixxapp.com/v1/waitlist/create";
-
-      fetch(waitlistUrl, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email: this.email }),
-      })
-        .then((response) => response.json())
-        .then((data) => {
-          this.apiMessage = data.message;
-          console.log(this.apiMessage);
-        })
-        .catch((error) => {
-          console.error("Error:", error);
-        });
-    },
-
-    submit() {
-      isEmail(this.$refs.input.value)
-        ? console.log(this.$refs.input.value)
-        : console.log("Error");
-    },
   },
 };
 </script>
@@ -81,5 +81,9 @@ export default {
 <style scoped>
 #input {
   outline: none;
+}
+
+.message {
+  background-color: rgba(0, 0, 0, 0.637);
 }
 </style>

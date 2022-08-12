@@ -1,27 +1,34 @@
 <template>
-    <div id="header" ref="header" class="bg-dull dark:bg-[#000804f5] w-full h-16 px-4 lg:px-32 flex justify-between items-center fixed top-0 z-[9999] shadow-3xl dark:shadow-lightShadow backdrop-blur-md">
-        <Icon :darks="darks" class="fill-[#182220] dark:fill-[#ffffff]" />
+  <div
+    id="header"
+    ref="header"
+    class="bg-dull dark:bg-[#000804bf] w-full h-16 px-4 lg:px-32 flex justify-between items-center fixed top-0 z-[9999] shadow-3xl dark:shadow-lightShadow backdrop-blur-md"
+  >
+    <Icon :darks="darks" class="fill-[#182220] dark:fill-[#ffffff]" />
 
-        <button class="cursor-pointer border border-slate-400 transition-all dark:border-white h-7 w-14 rounded-full px-2 py-1 flex flex-col" @click.stop="changeMode">
-            <img :src="['/images/' + mode +'.png']" class="w-[1.2rem] dark:self-end">
-        </button>
-    </div>
+    <button
+      class="cursor-pointer border border-slate-400 transition-all dark:border-white h-7 w-14 rounded-full px-2 py-1 flex flex-col"
+      @click.stop="changeMode"
+    >
+      <img :src="['/images/' + mode + '.png']" class="w-[1.2rem] dark:self-end" />
+    </button>
+  </div>
 </template>
 
 <script>
-import Icon from './Icon.vue'
+import Icon from "./Icon.vue";
 
 export default {
-    name: 'Header',
-    components: { Icon },
-    props: {
-        darkMode: Function,
-        mode: String
+  name: "Header",
+  components: { Icon },
+  props: {
+    darkMode: Function,
+    mode: String,
+  },
+  methods: {
+    changeMode() {
+      this.darkMode();
     },
-    methods: {
-        changeMode(){
-            this.darkMode()
-        }
-    },
-}
+  },
+};
 </script>
