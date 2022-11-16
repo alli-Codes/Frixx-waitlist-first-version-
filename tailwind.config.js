@@ -14,10 +14,10 @@ module.exports = {
         green: "#4BB064",
         dull: "#ffffffad",
         // #001530db
-        // topColor: "#001530",
-        topColor: "#022B23",
-        // bottomColor: "#000010",
-        bottomColor: "rgba(0, 0, 0, 0.96)",
+        topColor: "#001530",
+        // topColor: "#022B23",
+        bottomColor: "#000010",
+        // bottomColor: "rgba(0, 0, 0, 0.96)",
       },
 
       backgroundImage: {
@@ -26,7 +26,7 @@ module.exports = {
 
       boxShadow: {
         "3xl": "0px 4px 8px rgba(0, 0, 0, 0.05)",
-        "lightShadow": "3px 3px 10px rgb(0 184 211 / 50%)"
+        lightShadow: "3px 3px 10px rgb(0 184 211 / 50%)",
       },
       fontFamily: {
         "gorgagrotesque-bold": ["gorgagrotesque-bold"],
@@ -37,19 +37,19 @@ module.exports = {
         "gorgagrotesque-regular": ["gorgagrotesque-regular"],
       },
       screens: {
-        'sm': '640px',
+        sm: "640px",
         // => @media (min-width: 640px) { ... }
-  
-        'md': '768px',
+
+        md: "768px",
         // => @media (min-width: 768px) { ... }
-  
-        'lg': '1024px',
+
+        lg: "1024px",
         // => @media (min-width: 1024px) { ... }
-  
-        'xl': '1280px',
+
+        xl: "1280px",
         // => @media (min-width: 1280px) { ... }
-  
-        '2xl': '1536px',
+
+        "2xl": "1536px",
         // => @media (min-width: 1536px) { ... }
       },
     },
